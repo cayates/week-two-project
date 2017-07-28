@@ -66,12 +66,15 @@ function question5 () {
   // Answer:
   let titleLength="";
   for (i=0; i < data.length; i++){
-    for (j=0; j < data[j].materials.length; j++){
-      if (data[i].materials.length >= 8){
-        
+    if (data[i].materials.length >= 8){
+      titleLength += data[i].title + data[i].materials.length;
+      for (j=0; j < data[i].materials.length; j++){
+      titleLength += data[i].materials[j]
+
       }
     }
   }
+  console.log(titleLength);
 }
 
 
