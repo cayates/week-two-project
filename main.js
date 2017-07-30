@@ -82,4 +82,11 @@ function question5 () {
 // Answer:
 function question6 () {
   // Answer:
+  let number = 0;
+  for (i=0; i < data.length; i++){
+    if (data[i].who_made === "i_did"){
+      number = number + 1;
+    }
+  }
+  console.log((number) + " items were made by their sellers.");
 }
